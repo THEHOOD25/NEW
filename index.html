@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html>
+  <head>
     <title>Heart Animation</title>
+    <meta charset="UTF-8">
+    <meta name="Keywords">
+    <meta name="Description">
 
     <!-- Fuente elegante desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
     <style>
-        /* Estilos para el canvas */
-        canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.2);
-        }
+      /* Estilos para el canvas */
+      canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
 
-        /* Estilos para el mensaje */
-        h1 {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Dancing Script', cursive;
-            font-size: 8vw; /* Se adapta a la pantalla */
-            color: white;
-            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
-            z-index: 10;
-            animation: pulseFade 6s ease-in-out infinite;
-            text-align: center;
-            white-space: nowrap; /* Evita que el texto se divida */
-        }
+      /* Estilos para el mensaje */
+      h1 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        color: white;
+        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+        z-index: 10;
+        animation: pulseFade 6s ease-in-out infinite;
+      }
 
-        /* Animación corregida */
-        @keyframes pulseFade {
-            0%, 100% {
-                opacity: 0;
-                transform: translate(-50%, -50%) scale(1);
-            }
-            50% {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1.2);
-            }
+      /* Animación corregida */
+      @keyframes pulseFade {
+        0%, 100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(1);
         }
+        50% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
 
     <h1>FELIZ DÍA DE LA AMISTAD</h1>
-    <canvas id="heart"></canvas>
+    <canvas id="heart" width="1920" height="947"></canvas>
 
     <script src="heart-animation.js"></script>
 
-</body>
+  </body>
 </html>
